@@ -47,9 +47,6 @@ name="${name}@v0"
   mise exec -- lefthook install
   mise run test
 
-  # remove .repoconf just before the final commit
-  rm -r ".repoconf"
-
   git add .
   git commit -a -m "chore: update package details"
 )
